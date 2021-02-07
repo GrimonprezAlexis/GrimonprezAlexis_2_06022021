@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+* {box-sizing: border-box;}
 
 html {height: 100%}
 body {height: 100%; 
@@ -14,26 +15,39 @@ body {height: 100%;
 
 .blue { color:#0065FC } 
 .blue-light { color:#DEEBFF } 
-.grey { color:#F2F2F2 } 
+.grey { color:#F2F2F2 }
+
+.flex {display: flex;}
+.retourligne {clear:both;}
 .mt20 {margin-top: 20px;}
+.mr20 {margin-right: 20px;}
+.mb10 {margin-bottom: 10px;}
 
+.border2 {border: 2px solid #F2F2F2;}
+.radius25 {border-radius: 25px;}
 
-.container-fluid {
+.container {
+    margin: 10px;
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 10px;
 }
+
+.wrapper {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
 
 /*--------------------------------------------------------------
 # Header + Navigation
 --------------------------------------------------------------*/
 #header {
-    display: flex;
     justify-content: space-between;
 }
 
 .navbar {
-    display: flex;
     flex-direction: row;
     list-style: none;
     padding-left: 0;
@@ -41,11 +55,68 @@ body {height: 100%;
 }
 
 .navbar li {
-    margin: 5px 35px 0px 35px;
+    margin: 5px 35px 0px 0px;
     cursor: pointer;
 }
 
 .navbar li a {
     padding: 10px 0;
     text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Corps
+--------------------------------------------------------------*/
+.sub_header h3 {
+    margin-block-end: 0.3em;
+}
+
+.input-group {
+    margin-top: 10px;
+    height: 45px;
+}
+
+.marker {
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    align-items: center;
+}
+
+input:focus, button:focus{
+    outline: none;
+}
+
+.input_search {
+    padding: 1rem;
+    border-radius: 0px;
+    border: 1px solid;
+    border-color: #F2F2F2;
+    font-weight: bold;
+}
+
+.btn-search {
+    background-color: #0065FC;
+    padding: 0 20px 0 20px;
+    border-radius: 0 10px 10px 0;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-filter {
+    background-color: #DEEBFF;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+}
+
+.text-filter {
+    padding: 7px 18px 10px 45px;
+    position: relative;
+    border-left: none;
+    font-weight: bold;
 }

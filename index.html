@@ -15,27 +15,109 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
+        <meta property="og:title" content="Réservia"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://grimonprezalexis.github.io/GrimonprezAlexis_2_06022021.github.io/"/>
+        <meta property="og:image" content="assets/img/logo/Reservia.svg"/>
+        <meta property="og:description" content="Outil de planificiation de vacances"/>
+
+
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/grid.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
         <title>Réservia</title>
     </head>
 
     <body>
         <!-- ======= HEADER + NAVIGATION ======= -->
-        <header id="header" class="container-fluid">
+        <header id="header" class="flex container">
             <div class="logo">
                 <img src="assets/img/logo/Reservia.svg" alt="Logo Réservia" class="img-fluid" />
             </div>
 
             <nav>
-                <ul class="navbar">
+                <ul class="flex navbar">
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
                     <li><a href="#" class="register">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
+        <div class="mt20 retourligne"></div>
+        
+        <!-- ======= CORPS ======= -->
+        <section class="container">
+            <div class="sub_header">
+                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+                <span>En plein centre ville ou en pleine nature</span>
+            </div>
+
+            <form action="/action_page.php">
+                <div class="flex input-group">
+                    <div class="flex marker">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-map-marker-alt fa-stack-1x"></i>
+                        </span>    
+                    </div>
+                    <input type="search" class="input_search" placeholder="Rechercher" aria-label="Search"
+                    aria-describedby="search-addon" />
+                    <button type="button" class="btn-search">Rechercher</button>
+                </div>
+            </form>
+        </section>
         <div class="mt20"></div>
+
+         <!-- ======= FILTRE ======= -->
+        <section class="flex wrapper">
+            <div class="flex mb10 mr20">
+                <span class="text-filter">
+                    Filtre<br>    
+                </span>
+            </div>
+
+            <div class="flex mb10 mr20">
+                <span class="flex icon-filter radius25">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-money-bill-wave fa-stack-1x"></i>
+                </span>
+                <span class="text-filter border2 radius25">
+                    Économique<br>    
+                </span>
+            </div>
+
+            <div class="flex mb10 mr20">
+                <span class="flex icon-filter radius25">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-child fa-stack-1x"></i>
+                </span>
+                <span class="text-filter border2 radius25">
+                    Familial<br>    
+                </span>
+            </div>
+
+            <div class="flex mb10 mr20">
+                <span class="flex icon-filter radius25">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-heart fa-stack-1x"></i>
+                </span>
+                <span class="text-filter border2 radius25">
+                    Romantique<br>    
+                </span>
+            </div>
+
+            <div class="flex mb10 mr20">
+                <span class="flex icon-filter radius25">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-dog fa-stack-1x"></i>
+                </span>
+                <span class="text-filter border2 radius25">
+                    Animaux autorisés<br>    
+                </span>
+            </div>
+        </section>
+        <div class="mt20 retourligne"></div>
         
     </body>
 </html>
