@@ -31,11 +31,10 @@
 
     <body>
         <!-- ======= HEADER + NAVIGATION ======= -->
-        <header id="header" class="flex container">
+        <header id="header" class="container flex">
             <div class="logo">
                 <img src="assets/img/logo/Reservia.svg" alt="Logo Réservia" class="img-fluid" />
             </div>
-
             <nav>
                 <ul class="flex navbar">
                     <li><a href="#">Hébergements</a></li>
@@ -46,280 +45,388 @@
         </header>
         <div class="mt30 retourligne"></div>
         
-        <!-- ======= CORPS ======= -->
-        <section class="container">
-            <div class="sub_header">
-                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
-                <span>En plein centre ville ou en pleine nature</span>
-            </div>
-
-            <form action="/action_page.php">
-                <div class="flex input-group">
-                    <div class="flex marker">
-                        <span class="fa-stack">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-map-marker-alt fa-stack-1x"></i>
-                        </span>    
-                    </div>
-                    <input type="search" class="input_search" placeholder="Marseille, France" aria-label="Search"
-                    aria-describedby="search-addon" />
-                    <button type="button" class="btn-search">Rechercher</button>
+        <!-- ======= DÉBUT CONTENU ======= -->
+        <section class="container" id="first-content">
+            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+            <span>En plein centre ville ou en pleine nature</span>
+            <div class="mt20"></div>
+            <div class="flex-row input-group">
+                <div class="flex marker">
+                    <span class="fa-stack">
+                        <i class="fa fa-map-marker-alt fa-stack-1x"></i>
+                    </span>    
                 </div>
-            </form>
+                <input type="search" class="input_search" placeholder="Marseille, France" aria-label="Search"
+                aria-describedby="search-addon" />
+                <button type="button" class="btn-search">Rechercher</button>
+            </div>
         </section>
-        <div class="mt30 retourligne"></div>
+        <div class="mt20 retourligne"></div>
 
-         <!-- ======= FILTRE ======= -->
-        <section class="flex wrapper">
-            <div class="flex mb10 mr20">
-                <span class="text-filter">
-                    Filtres<br>    
-                </span>
-            </div>
-
-            <div class="flex mb10 mr20">
-                <span class="flex icon-filter radius25">
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-money-bill-wave fa-stack-1x"></i>
-                </span>
-                <span class="text-filter border2 radius25">
-                    Économique<br>    
-                </span>
-            </div>
-
-            <div class="flex mb10 mr20">
-                <span class="flex icon-filter radius25">
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-child fa-stack-1x"></i>
-                </span>
-                <span class="text-filter border2 radius25">
-                    Familial<br>    
-                </span>
-            </div>
-
-            <div class="flex mb10 mr20">
-                <span class="flex icon-filter radius25">
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-heart fa-stack-1x"></i>
-                </span>
-                <span class="text-filter border2 radius25">
-                    Romantique<br>    
-                </span>
-            </div>
-
-            <div class="flex mb10 mr20">
-                <span class="flex icon-filter radius25">
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-dog fa-stack-1x"></i>
-                </span>
-                <span class="text-filter border2 radius25">
-                    Animaux autorisés<br>    
-                </span>
-            </div>
+        <!-- ======= FILTRE ======= -->
+        <section class="container flex-row">
+            <ul class="flex-container" id="filtre">
+                <li>Filtre</li>
+                <li>
+                    <span class="fa-stack filtre_icon">
+                        <i class="fa fa-money-bill-wave fa-stack-1x"></i>
+                    </span>
+                    <span class="padding5">Economique</span>
+                </li>
+                <li>
+                    <span class="fa-stack filtre_icon">
+                        <i class="fa fa-child fa-stack-1x"></i>
+                    </span>
+                    <span class="padding5">Familial</span>
+                </li>
+                <li>
+                    <span class="fa-stack filtre_icon">
+                        <i class="fa fa-heart fa-stack-1x"></i>
+                    </span>
+                    <span class="padding5">Romantique</span>
+                </li>
+                <li>
+                    <span class="fa-stack filtre_icon">
+                        <i class="fa fa-dog fa-stack-1x"></i>
+                    </span>
+                    <span class="padding5">Animaux autorisés</span>
+                </li>
+            </ul>
         </section>
         <div class="retourligne"></div>
 
+        <!-- ======= INFORMATIONS LOGEMEMENT ======= -->
         <div class="container">
-            <div class="flex mb10">
-                <span class="flex icon-filter border2 radius25 blue nobackground">
-                    <i class="fa fa-circle-thin fa-stack-1x"></i>
-                    <i class="fa fa-info fa-stack-1x"></i>
+            <div class="information-logements">
+                <span class="fa-stack blue">
+                <i class="fa fa-circle-thin fa-stack-lg"></i>
+                <i class="fa fa-info fa-stack-1x"></i>
                 </span>
-                <span class="text-info">
-                Plus de 500 logements sont disponibles dans cette ville    
-                </span>
+                <span class="text-info">Plus de 500 logements sont disponibles dans cette ville</span>                
             </div>
         </div>
         <div class="mt20 retourligne"></div>
 
-         <!-- ======= HÉBERGEMENT ======= -->
-
 
         <div class="container flex">
+            <!-- ======= HÉBERGEMENT ======= -->
             <section class="box-hebergement">
                 <h3>Hébergements à Marseille</h3>
                 <ul class="flex-container">
                     <li class="flex-item">
-                        <img src="assets/img/hebergements/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" class="img-fluid"/>
-                        <div class="box-hebergement_details">
+                        <img src="assets/img/hebergements/xd/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" class="img-fluid"/>
+                        <div class="flex-item_details">
                             <span class="mb10 bold">Aubgerge de la Cannebière</span>
                             <span class="mb5">Nuit à partir de <b>25€</b></span>
                             <div>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars force-grey">
+                                <span class="box-stars force-grey">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
                             </div>
                         </div>
                     </li>
                     <li class="flex-item">
-                        <img src="assets/img/hebergements/hotel-du-port.jpg" alt="Hôtel du port" class="img-fluid"/>
-                        <div class="box-hebergement_details">
+                        <img src="assets/img/hebergements/xd/hotel-du-port.jpg" alt="Hôtel du port" class="img-fluid"/>
+                        <div class="flex-item_details">
                             <span class="mb10 bold">Hôtel du port</span>
                             <span class="mb5">Nuit à partir de 52<b>€</b></span>
                             <div>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
                             </div>
                         </div>
                     </li>
                     <li class="flex-item">
-                        <img src="assets/img/hebergements/hotel-les-mouettes.jpg" alt="Hôtel Les mouettes" class="img-fluid"/>
-                        <div class="box-hebergement_details">
+                        <img src="assets/img/hebergements/xd/hotel-les-mouettes.jpg" alt="Hôtel Les mouettes" class="img-fluid"/>
+                        <div class="flex-item_details">
                             <span class="mb10 bold">Hôtel Les mouettes</span>
                             <span class="mb5">Nuit à partir de 76<b>€</b></span>
                             <div>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars force-grey">
+                                <span class="box-stars force-grey">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
                             </div>
                         </div>
                     </li>
                     <li class="flex-item">
-                        <img src="assets/img/hebergements/hotel-de-la-mer.jpg" alt="Hôtel de la mer" class="img-fluid"/>
-                        <div class="box-hebergement_details">
+                        <img src="assets/img/hebergements/xd/hotel-de-la-mer.jpg" alt="Hôtel de la mer" class="img-fluid"/>
+                        <div class="flex-item_details">
                             <span class="mb10 bold">Hôtel de la mer</span>
                             <span class="mb5">Nuit à partir de 46<b>€</b></span>
                             <div>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars force-grey">
+                                <span class="box-stars force-grey">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars force-grey">
+                                <span class="box-stars force-grey">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
                             </div>
                         </div>
                     </li>
                     <li class="flex-item">
-                        <img src="assets/img/hebergements/auberge-le-panier.jpg" alt="Auberge Le Panier" class="img-fluid"/>
-                        <div class="box-hebergement_details">
+                        <img src="assets/img/hebergements/xd/auberge-le-panier.jpg" alt="Auberge Le Panier" class="img-fluid"/>
+                        <div class="flex-item_details">
                             <span class="mb10 bold">Auberge Le Panier</span>
                             <span class="mb5">Nuit à partir de <b>23€</b></span>
                             <div>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars force-grey">
+                                <span class="box-stars force-grey">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
                             </div>
                         </div>
                     </li>
                     <li class="flex-item">
-                        <img src="assets/img/hebergements/hotel-chez-amina.jpg" alt="Hôtel chez Amina" class="img-fluid"/>
-                        <div class="box-hebergement_details">
+                        <img src="assets/img/hebergements/xd/hotel-chez-amina.jpg" alt="Hôtel chez Amina" class="img-fluid"/>
+                        <div class="flex-item_details">
                             <span class="mb10 bold">Hôtel chez Amina</span>
                             <span class="mb5">Nuit à partir de 96<b>€</b></span>
                             <div>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
-                                <span class="box-hebergement_stars">
+                                <span class="box-stars">
                                 <i class="fa fa-star fa-stack-1x"></i>
                                 </span>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <p><b>Afficher plus</b></p>
+                <p>Afficher plus</p>
             </section>
 
+            <!-- ======= LES PLUS POPULAIRES ======= -->
             <section class="box-populaire">
-                <h3>Les plus populaires</h3>
+                <div class="box-populaire_title">
+                    <h3>Les plus populaires</h3>
+                    <span class="fa-stack">
+                        <i class="fa fa-chart-line fa-stack-1x"></i>
+                    </span>
+                </div>
                 <ul class="flex-column">
-                <li class="flex-item">1</li>
-                <li class="flex-item">2</li>
-                <li class="flex-item">3</li>
+                    <li class="flex-item-populaire">
+                        <img src="assets/img/hebergements/populaires/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le Soleil du Matin" class="img-fluid"/>
+                        <div class="flex-item_details">
+                            <span class="mb10 bold">Hôtel Le Soleil du Matin</span>
+                            <span class="mb5">Nuit à partir de 128<b>€</b></span>
+                            <div class="bottom0">
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item-populaire">
+                        <img src="assets/img/hebergements/populaires/au-coeur-de-leau.jpg" alt="Au coeur de l'eau Chambres d'hôtes" class="img-fluid"/>
+                        <div class="flex-item_details">
+                            <span class="mb10 bold">Au coeur de l'eau Chambres d'hôtes</span>
+                            <span class="mb5">Nuit à partir de 71<b>€</b></span>
+                            <div class="bottom0">
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars force-grey">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="flex-item-populaire">
+                        <img src="assets/img/hebergements/populaires/hotel-tout-bleu-et-blanc.jpg" alt="Hôtel Tout bleu et Blanc" class="img-fluid"/>
+                        <div class="flex-item_details">
+                            <span class="mb10 bold">Hôtel Tout bleu et Blanc</span>
+                            <span class="mb5">Nuit à partir de 68<b>€</b></span>
+                            <div class="bottom0">
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                                <span class="box-stars force-grey">
+                                <i class="fa fa-star fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-
-
             </section>
         </div>
+        <div class="mb20 retourligne"></div>
+
+         <!-- ======= ACTIVITES ======= -->
+        <div class="container">
+            <h2>Activités à Marseille</h2>
+            
+            <style>
+            #conteneur
+            {
+                display: flex;
+                justify-content:space-between;
+                flex-wrap:wrap;
+                flex: 0 0 91.666667%;
+                max-width: 91.666667%;
+            }
+            .element {
+                background: green;
+                border-radius: 15px;
+            }
+
+            .element img {
+                width: 300px;
+            }
+
+            .element p {
+                margin-top: 15px;
+                padding-bottom: 10px;
+                margin-left: 15px;
+            }
 
 
 
 
+            </style>
 
+        <div id="conteneur">
+            <div class="element">
+                <img src="assets/img/activites/vieux-port.jpg" alt="Au coeur de l'eau Chambres d'hôtes" class="img-fluid"/>
+                <p>Vieux port</p>
+            </div>
+            
 
+            <div>
+                <div class="element mb40">
+                    <img src="assets/img/activites/fort-de-pomegue.jpg" alt="Au coeur de l'eau Chambres d'hôtes" class="img-fluid"/>
+                    <p>Fort de Pomègues</p>
+                </div>
+                    
+                <div class="element">
+                    <img src="assets/img/activites/ile-du-fioul.jpg" alt="Au coeur de l'eau Chambres d'hôtes" class="img-fluid"/>
+                    <p>Îles du Frioul</p>
+                </div>
+            </div>
 
+                <div class="element">
+                    <img src="assets/img/activites/parc-national.jpg" alt="Au coeur de l'eau Chambres d'hôtes" class="img-fluid"/>
+                    <p>Parc National des Calanques</p>
+                </div>
+                
+                <div>
+                    <div class="element mb40">
+                        <img src="assets/img/activites/notre-dame.png" alt="Au coeur de l'eau Chambres d'hôtes" class="img-fluid"/>
+                        <p>Notre-Dame-de-la-Garde</p>
+                    </div>
+                    <div class="element">
+                        <img src="assets/img/activites/parc-longchamp.jpg" alt="Au coeur de l'eau Chambres d'hôtes" class="img-fluid"/>
+                        <p>Parc Longchamp</p></div>
+                    </div>
+            </div>
 
-
-        <div>
-            <div></div>
-            <div></div>
-        </div>
 
 
         <!-- aside information complémentaire généralement sur le coté -->
 
-<!--         
+        <div class="mt30 retourligne"></div>
+        
         <footer>
             <p>Copyright  - Tous droits réservés<br />
             <a href="#">Me contacter !</a></p>
-        </footer> -->
+        </footer>
         
     </body>
 </html>
