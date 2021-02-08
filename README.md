@@ -9,6 +9,12 @@ Projet 2 - Transformez une maquette en site web
 - Standard W3C
 - Compatibilité avec les dernières versions de Chrome et Firefox.
 
+### Charte graphique
+- Bibliothèque Font Awesome pour les icones
+- Bleu `#0065FC` et sa version plus claire `#DEEBFF`, Gris pour le fond `#F2F2F2`.
+- La police du site Raleway.
+
+
 ### Technlogies
 HTML, CSS, Font Awesome, Github
 
