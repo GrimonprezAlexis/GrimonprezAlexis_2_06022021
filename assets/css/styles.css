@@ -195,13 +195,9 @@ input:focus, button:focus{
     text-align: center;
     margin: 5px 20px 10px 20px;
     padding: 5px 5px 0 5px;
+    box-shadow: 1px 4px 6px 0px #00000014
 }
-.flex-column {
-    flex-flow: column wrap;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+
 
 .flex-item_details {
     display: flex;
@@ -241,7 +237,13 @@ input:focus, button:focus{
 .box-populaire img {
     border-radius: 15px 0 0 15px;
 }
-.flex-item-populaire {
+.box-populaire_list {
+    flex-flow: column wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box-populaire_item {
     display: inline-flex;
     background: white;
     padding: 5px;
@@ -249,8 +251,39 @@ input:focus, button:focus{
     border-radius: 20px;
     margin-bottom: 25px;
     width: -webkit-fill-available;
+    box-shadow: 1px 4px 10px 0px #00000014
 }
 .bottom0 {
     bottom: 0;
     margin-top: auto;    
+}
+
+
+/*--------------------------------------------------------------
+# Activités
+--------------------------------------------------------------*/
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.box-activite {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+.box-activite_item {
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    box-shadow: 1px 4px 6px 0px #00000014
+}
+.box-activite_item img {
+    width: 300px;
+}
+.box-activite_item p {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: bold;
 }
