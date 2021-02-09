@@ -35,13 +35,24 @@
             <div class="logo">
                 <img src="assets/img/logo/Reservia.svg" alt="Logo Réservia" class="img-fluid" />
             </div>
-            <nav>
-                <ul class="flex navbar">
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#" class="register">S'inscrire</a></li>
-                </ul>
+
+            <nav class="navbar">
+                <div class="nav-menu" onmouseover="addClass(1)" onmouseout="removeClass(1)">
+                    <i id="item-hover-1"></i>
+                    <p class="nav-menu-item"><a >Hébergement</a></p>
+                </div>
+
+                <div class="nav-menu" onmouseover="addClass(2)" onmouseout="removeClass(2)">
+                    <i id="item-hover-2"></i>
+                    <p class="nav-menu-item"><a>Activités</a></p>
+                </div>
+
+                <div class="nav-menu" onmouseover="addClass(3)" onmouseout="removeClass(3)">
+                    <i id="item-hover-3"></i>
+                    <p class="nav-menu-item"><a id="register">S'inscrire</a></p>
+                </div>
             </nav>
+
         </header>
         <div class="mt30 retourligne"></div>
         
@@ -114,7 +125,7 @@
                 <h3>Hébergements à Marseille</h3>
                 <ul class="flex-container">
                     <li class="box-hebergement_item">
-                        <img src="assets/img/hebergements/xd/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" class="img-fluid"/>
+                        <img src="assets/img/hebergements/xd2/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière" class="img-fluid"/>
                         <div class="flex-item_details">
                             <span class="mb10 bold">Aubgerge de la Cannebière</span>
                             <span class="mb5">Nuit à partir de <b>25€</b></span>
@@ -138,7 +149,7 @@
                         </div>
                     </li>
                     <li class="box-hebergement_item">
-                        <img src="assets/img/hebergements/xd/hotel-du-port.jpg" alt="Hôtel du port" class="img-fluid"/>
+                        <img src="assets/img/hebergements/xd2/hotel-du-port.jpg" alt="Hôtel du port" class="img-fluid"/>
                         <div class="flex-item_details">
                             <span class="mb10 bold">Hôtel du port</span>
                             <span class="mb5">Nuit à partir de 52<b>€</b></span>
@@ -162,7 +173,7 @@
                         </div>
                     </li>
                     <li class="box-hebergement_item">
-                        <img src="assets/img/hebergements/xd/hotel-les-mouettes.jpg" alt="Hôtel Les mouettes" class="img-fluid"/>
+                        <img src="assets/img/hebergements/xd2/hotel-les-mouettes.jpg" alt="Hôtel Les mouettes" class="img-fluid"/>
                         <div class="flex-item_details">
                             <span class="mb10 bold">Hôtel Les mouettes</span>
                             <span class="mb5">Nuit à partir de 76<b>€</b></span>
@@ -186,7 +197,7 @@
                         </div>
                     </li>
                     <li class="box-hebergement_item">
-                        <img src="assets/img/hebergements/xd/hotel-de-la-mer.jpg" alt="Hôtel de la mer" class="img-fluid"/>
+                        <img src="assets/img/hebergements/xd2/hotel-de-la-mer.jpg" alt="Hôtel de la mer" class="img-fluid"/>
                         <div class="flex-item_details">
                             <span class="mb10 bold">Hôtel de la mer</span>
                             <span class="mb5">Nuit à partir de 46<b>€</b></span>
@@ -210,7 +221,7 @@
                         </div>
                     </li>
                     <li class="box-hebergement_item">
-                        <img src="assets/img/hebergements/xd/auberge-le-panier.jpg" alt="Auberge Le Panier" class="img-fluid"/>
+                        <img src="assets/img/hebergements/xd2/auberge-le-panier.jpg" alt="Auberge Le Panier" class="img-fluid"/>
                         <div class="flex-item_details">
                             <span class="mb10 bold">Auberge Le Panier</span>
                             <span class="mb5">Nuit à partir de <b>23€</b></span>
@@ -234,7 +245,7 @@
                         </div>
                     </li>
                     <li class="box-hebergement_item">
-                        <img src="assets/img/hebergements/xd/hotel-chez-amina.jpg" alt="Hôtel chez Amina" class="img-fluid"/>
+                        <img src="assets/img/hebergements/xd2/hotel-chez-amina.jpg" alt="Hôtel chez Amina" class="img-fluid"/>
                         <div class="flex-item_details">
                             <span class="mb10 bold">Hôtel chez Amina</span>
                             <span class="mb5">Nuit à partir de 96<b>€</b></span>
@@ -386,12 +397,37 @@
             </div>
         </div>
 
-        <div class="mt30 retourligne"></div>
+        <div class="mb50 retourligne"></div>
         
-        <footer>
-            <p>Copyright  - Tous droits réservés<br />
-            <a href="#">Me contacter !</a></p>
+        <footer id="footer">
+            <div class="container flex-row">
+                <div class="box-footer">
+                   <h3>A propos</h3>
+                    <ul>
+                        <li>Fonctionnement du site</li>
+                        <li>Conditions générales de vente</li>
+                        <li>Données et confidentialité</li>
+                    </ul>
+                </div>
+                <div class="box-footer">
+                    <h3>Hébergement</h3>
+                    <ul>
+                        <li>Charte qualité</li>
+                        <li>Soumettre votre hôtel</li>
+                    </ul>
+                </div>
+                <div class="box-footer">
+                    <h3>Assitance</h3>
+                    <ul>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+                </div>
+
+            </div>
+
         </footer>
         
     </body>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </html>
