@@ -41,7 +41,7 @@ body {height: 100%;
 }
 .img-fluid {
     max-width: 100%;
-    height: auto;
+    height: fit-content;
 }
 
 /*--------------------------------------------------------------
@@ -135,6 +135,7 @@ input:focus, button:focus{
     height: 2.5em!important;
     width: 2.5em!important;
     line-height: 2.5em!important;
+    top: -1px;
 }
 .filtre_icon {
     background-color: #DEEBFF;
@@ -227,13 +228,12 @@ input:focus, button:focus{
     border-radius: 15px 0 0 15px;
 }
 .box-populaire_list {
-    flex-flow: column wrap;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 .box-populaire_item {
-    display: inline-flex;
+    display: flex;
     background: white;
     padding: 5px;
     height: auto;
