@@ -29,7 +29,7 @@
         <title>Réservia</title>
     </head>
 
-    <body>
+    <body onscroll="onScroll()">
         <!-- ======= HEADER + NAVIGATION ======= -->
         <header id="header" class="container flex">
             <div class="logo">
@@ -40,12 +40,12 @@
                 <div class="inline-flex" id="nav-desktop">
                     <div class="nav-menu" onmouseover="addClass(1)" onmouseout="removeClass(1)">
                         <i id="item-hover-1"></i>
-                        <p class="nav-menu-item"><a >Hébergement</a></p>
+                        <p class="nav-menu-item"><a href="#hebergement">Hébergement</a></p>
                     </div>
     
                     <div class="nav-menu" onmouseover="addClass(2)" onmouseout="removeClass(2)">
                         <i id="item-hover-2"></i>
-                        <p class="nav-menu-item"><a>Activités</a></p>
+                        <p class="nav-menu-item"><a href="#activites">Activités</a></p>
                     </div>
                 </div>
 
@@ -59,8 +59,8 @@
 
         <nav id="nav-mobile" role="navigation">
             <ul clas="menu">
-                <li><a href="#">Hébergement</a></li>
-                <li><a href="#">Activités</a></li>
+                <li><a href="#hebergement">Hébergement</a></li>
+                <li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
 
@@ -377,7 +377,7 @@
         <div class="mb50 retourligne"></div>
 
          <!-- ======= ACTIVITES ======= -->
-        <div class="container">
+        <div class="container" id="activites">
             <h2>Activités à Marseille</h2>
             <div class="box-activite">
                 <div class="box-activite_item">
@@ -440,11 +440,13 @@
                         <div class="mb50"></div>
                     </ul>
                 </div>
-
             </div>
-
         </footer>
-        
+
+        <a href="#header" class="back-to-top" id="scrollTop">
+        <i class="fa fa-arrow-circle-up fa-stack-1x"></i>    
+        </a>
+
+        <script type="text/javascript" src="assets/js/script.js"></script>
     </body>
-    <script type="text/javascript" src="assets/js/script.js"></script>
 </html>
