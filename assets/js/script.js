@@ -9,6 +9,7 @@ function removeClass(index) {
   element.classList.remove("nav-hover");
 }
 
+/** Show button scrollTop */
 function onScroll(){
   var el = document.getElementById('scrollTop');
   window.scrollY  > 100 ? el.style.display = "block" : el.style.display = "none";

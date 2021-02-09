@@ -2,6 +2,8 @@
 # General
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&display=swap');
+
 * {box-sizing: border-box;}
 
 html {
@@ -84,16 +86,14 @@ a {
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
-
 .back-to-top i {
   font-size: 24px;
   position: absolute;
   top: 7px;
   left: 0px;
 }
-
 .back-to-top:hover {
-  color: #white;
+  color: white;
   background: #0065FC;
   transition: background 0.2s ease-in-out;
 }
@@ -182,7 +182,7 @@ input:focus, button:focus{
     font-weight: bold;
     text-align: center;
     margin: 10px;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 25px;
     padding-right: 15px;
 }
@@ -191,7 +191,8 @@ input:focus, button:focus{
     height: 2.5em!important;
     width: 2.5em!important;
     line-height: 2.5em!important;
-    top: -1px;
+    top: -2px;
+    right: 2px;
 }
 .filtre_icon {
     background-color: #DEEBFF;
@@ -350,138 +351,4 @@ input:focus, button:focus{
     flex: 0 0 25%;
     max-width: 25%;
     margin: 2vw 5vw 0 0;
-}
-
-
-/*--------------------------------------------------------------
-# Media queries
---------------------------------------------------------------*/
-/*  min-width: 1200px
- min-width: 992px
- min-width: 768px
- min-width: 576px
- 
- Très petit < 576 px
- Petite ≥ 576 px -sm
- Moyenne ≥ 768 px -md
- Grande ≥ 992 px -lg
- Très grande ≥ 1 200 px -xl */
-
-@media screen and (min-width: 320px) and (max-width:768px){
-    .navbar {
-        flex-direction: column-reverse;
-        display: flex;
-        margin-top: 1vw;
-    }
-    #nav-desktop {display: none;}
-    #nav-mobile ul {
-        margin: 0px;
-        padding: 0px;
-        list-style:none;
-        display: flex;
-        flex-flow: row wrap;
-
-    }
-    #nav-mobile ul>li {
-        color:#0065FC;
-        border-bottom: 2px solid #0065FC;
-        padding: 0 9vw;
-        width: 50%;
-    }
-    #nav-mobile ul > li:nth-child(2) {
-        color:#F2F2F2;
-        border-bottom: 2px solid #F2F2F2;
-    }
-    #nav-mobile a {
-        padding: 1em;
-        display: block;
-        text-align:center;
-        text-decoration: none;
-    }
-    #nav-mobile .menu {
-        display: flex;
-        flex-direction : row;
-        justify-content: center;
-    }
-    #btn-search-desktop {display: none;}
-    .input_search {
-        padding: 3vw 5vw;
-    }
-    .flex-row {
-        display: inline-flex;
-    }
-    .flex-container {
-        display: block;
-    }
-    #filtre {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-    }
-    #filtre li {
-        margin: 10px 0;
-        text-align: -webkit-auto;
-        padding-right: 25px;
-    }
-    .filtre_text {
-        width: -webkit-fill-available;
-        margin-bottom: 10px;
-    }
-    #hebergement {
-        padding: 0;
-        margin: 0;
-    }
-    .box-populaire, .box-hebergement {
-        order: 1;
-        flex: 0 0 100%;
-        max-width: 100%;
-        border-radius: initial;
-        padding: 5vw 0;
-        margin:0
-    }
-    .box-hebergement {
-        order:2; 
-        background-color: white;
-    }
-    .box-populaire_title {
-        margin: 0 5.5vw;
-    }
-    .box-hebergement_item {
-        margin:5vw 5.5vw 3.5vw 5.5vw
-    }
-    .box-populaire_item {
-        margin: 0 5.5vw 3.5vw 5.5vw;
-    }
-    .box-populaire_title > span {
-        font-size: 18px;
-    }
-
-    #footer > div:nth-child(1){
-        display: flex;
-        flex-direction: column;
-    }
-    .box-footer {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    #footer ul {
-        margin-bottom: 20px;
-    }
-
-}
-
-/** between 769 et 1200px à corrigé */
-
-
-
-
-
-@media screen and (min-width: 769px) {
-    #nav-mobile {display: none;}
-    #btn-search-mobile {display: none;}
-
-}
-
-@media(min-width:1200px) {
-
 }

@@ -23,11 +23,12 @@
 
 
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/grid.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
         <title>Réservia</title>
     </head>
+
 
     <body onscroll="onScroll()">
         <!-- ======= HEADER + NAVIGATION ======= -->
@@ -42,13 +43,11 @@
                         <i id="item-hover-1"></i>
                         <p class="nav-menu-item"><a href="#hebergement">Hébergement</a></p>
                     </div>
-    
                     <div class="nav-menu" onmouseover="addClass(2)" onmouseout="removeClass(2)">
                         <i id="item-hover-2"></i>
                         <p class="nav-menu-item"><a href="#activites">Activités</a></p>
                     </div>
                 </div>
-
                 <div class="nav-menu" onmouseover="addClass(3)" onmouseout="removeClass(3)">
                     <i id="item-hover-3"></i>
                     <p class="nav-menu-item"><a id="register">S'inscrire</a></p>
@@ -56,14 +55,12 @@
             </nav>
         </header>
 
-
         <nav id="nav-mobile" role="navigation">
             <ul clas="menu">
                 <li><a href="#hebergement">Hébergement</a></li>
                 <li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
-
 
         <div class="mt30 retourligne"></div>
         
@@ -84,8 +81,6 @@
                 <button type="button" class="btn-search" id="btn-search-mobile">
                     <span class="fa-stack"><i class="fa fa-search fa-stack-1x"></i></span>
                 </button>
-
-
             </div>
         </section>
         <div class="mt20 retourligne"></div>
@@ -98,7 +93,7 @@
                     <span class="fa-stack filtre_icon">
                         <i class="fa fa-money-bill-wave fa-stack-1x"></i>
                     </span>
-                    <span class="padding5">Economique</span>
+                    <span class="padding5">Économique</span>
                 </li>
                 <li>
                     <span class="fa-stack filtre_icon">
@@ -125,7 +120,7 @@
         <!-- ======= INFORMATIONS LOGEMEMENT ======= -->
         <div class="container">
             <div class="information-logements">
-                <span class="fa-stack blue">
+                <span class="fa-stack blue" id="icon-info">
                 <i class="fa fa-circle-thin fa-stack-lg"></i>
                 <i class="fa fa-info fa-stack-1x"></i>
                 </span>
@@ -133,7 +128,6 @@
             </div>
         </div>
         <div class="mt20 retourligne"></div>
-
 
         <div class="container flex" id="hebergement">
             <!-- ======= HÉBERGEMENT ======= -->
@@ -146,21 +140,11 @@
                             <span class="mb10 bold">Aubgerge de la Cannebière</span>
                             <span class="mb5">Nuit à partir de <b>25€</b></span>
                             <div>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars force-grey">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars force-grey"><i class="fa fa-star fa-stack-1x"></i></span>
                             </div>
                         </div>
                     </li>
@@ -170,21 +154,11 @@
                             <span class="mb10 bold">Hôtel du port</span>
                             <span class="mb5">Nuit à partir de 52<b>€</b></span>
                             <div>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
                             </div>
                         </div>
                     </li>
@@ -194,21 +168,11 @@
                             <span class="mb10 bold">Hôtel Les mouettes</span>
                             <span class="mb5">Nuit à partir de 76<b>€</b></span>
                             <div>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars force-grey">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars force-grey"><i class="fa fa-star fa-stack-1x"></i></span>
                             </div>
                         </div>
                     </li>
@@ -218,21 +182,11 @@
                             <span class="mb10 bold">Hôtel de la mer</span>
                             <span class="mb5">Nuit à partir de 46<b>€</b></span>
                             <div>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars force-grey">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars force-grey">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars force-grey"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars force-grey"><i class="fa fa-star fa-stack-1x"></i></span>
                             </div>
                         </div>
                     </li>
@@ -242,21 +196,11 @@
                             <span class="mb10 bold">Auberge Le Panier</span>
                             <span class="mb5">Nuit à partir de <b>23€</b></span>
                             <div>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars force-grey">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars force-grey"><i class="fa fa-star fa-stack-1x"></i></span>
                             </div>
                         </div>
                     </li>
@@ -266,21 +210,11 @@
                             <span class="mb10 bold">Hôtel chez Amina</span>
                             <span class="mb5">Nuit à partir de 96<b>€</b></span>
                             <div>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
                             </div>
                         </div>
                     </li>
@@ -292,9 +226,7 @@
             <section class="box-populaire">
                 <div class="box-populaire_title">
                     <h3>Les plus populaires</h3>
-                    <span class="fa-stack">
-                        <i class="fa fa-chart-line fa-stack-1x"></i>
-                    </span>
+                    <span class="fa-stack"><i class="fa fa-chart-line fa-stack-1x"></i></span>
                 </div>
                 <ul class="box-populaire_list">
                     <li class="box-populaire_item">
@@ -303,21 +235,11 @@
                             <span class="mb10 bold">Hôtel Le Soleil du Matin</span>
                             <span class="mb5">Nuit à partir de 128<b>€</b></span>
                             <div class="bottom0">
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
                             </div>
                         </div>
                     </li>
@@ -328,21 +250,11 @@
                             <span class="mb10 bold">Au coeur de l'eau Chambres d'hôtes</span>
                             <span class="mb5">Nuit à partir de 71<b>€</b></span>
                             <div class="bottom0">
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars force-grey">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars force-grey"><i class="fa fa-star fa-stack-1x"></i></span>
                             </div>
                         </div>
                     </li>
@@ -353,28 +265,18 @@
                             <span class="mb10 bold">Hôtel Tout bleu et Blanc</span>
                             <span class="mb5">Nuit à partir de 68<b>€</b></span>
                             <div class="bottom0">
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
-                                <span class="box-stars force-grey">
-                                <i class="fa fa-star fa-stack-1x"></i>
-                                </span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars"><i class="fa fa-star fa-stack-1x"></i></span>
+                                <span class="box-stars force-grey"><i class="fa fa-star fa-stack-1x"></i></span>
                             </div>
                         </div>
                     </li>
                 </ul>
             </section>
         </div>
-        <div class="mb50 retourligne"></div>
+        <div class="mb50 retourligne" id="hideForMobile"></div>
 
          <!-- ======= ACTIVITES ======= -->
         <div class="container" id="activites">
@@ -433,7 +335,7 @@
                     </ul>
                 </div>
                 <div class="box-footer">
-                    <h3>Assitance</h3>
+                    <h3>Assistance</h3>
                     <ul>
                         <li>Centre d'aide</li>
                         <li>Nous contacter</li>
