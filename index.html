@@ -36,15 +36,17 @@
                 <img src="assets/img/logo/Reservia.svg" alt="Logo Réservia" class="img-fluid" />
             </div>
 
-            <nav class="navbar">
-                <div class="nav-menu" onmouseover="addClass(1)" onmouseout="removeClass(1)">
-                    <i id="item-hover-1"></i>
-                    <p class="nav-menu-item"><a >Hébergement</a></p>
-                </div>
-
-                <div class="nav-menu" onmouseover="addClass(2)" onmouseout="removeClass(2)">
-                    <i id="item-hover-2"></i>
-                    <p class="nav-menu-item"><a>Activités</a></p>
+            <nav class="navbar" role="navigation">
+                <div class="inline-flex" id="nav-desktop">
+                    <div class="nav-menu" onmouseover="addClass(1)" onmouseout="removeClass(1)">
+                        <i id="item-hover-1"></i>
+                        <p class="nav-menu-item"><a >Hébergement</a></p>
+                    </div>
+    
+                    <div class="nav-menu" onmouseover="addClass(2)" onmouseout="removeClass(2)">
+                        <i id="item-hover-2"></i>
+                        <p class="nav-menu-item"><a>Activités</a></p>
+                    </div>
                 </div>
 
                 <div class="nav-menu" onmouseover="addClass(3)" onmouseout="removeClass(3)">
@@ -52,8 +54,17 @@
                     <p class="nav-menu-item"><a id="register">S'inscrire</a></p>
                 </div>
             </nav>
-
         </header>
+
+
+        <nav id="nav-mobile" role="navigation">
+            <ul clas="menu">
+                <li><a href="#">Hébergement</a></li>
+                <li><a href="#">Activités</a></li>
+            </ul>
+        </nav>
+
+
         <div class="mt30 retourligne"></div>
         
         <!-- ======= DÉBUT CONTENU ======= -->
@@ -69,7 +80,12 @@
                 </div>
                 <input type="search" class="input_search" placeholder="Marseille, France" aria-label="Search"
                 aria-describedby="search-addon" />
-                <button type="button" class="btn-search">Rechercher</button>
+                <button type="button" class="btn-search" id="btn-search-desktop">Rechercher</button>
+                <button type="button" class="btn-search" id="btn-search-mobile">
+                    <span class="fa-stack"><i class="fa fa-search fa-stack-1x"></i></span>
+                </button>
+
+
             </div>
         </section>
         <div class="mt20 retourligne"></div>
@@ -77,7 +93,7 @@
         <!-- ======= FILTRE ======= -->
         <section class="container flex-row">
             <ul class="flex-container" id="filtre">
-                <li>Filtre</li>
+                <span class="filtre_text">Filtre</span>
                 <li>
                     <span class="fa-stack filtre_icon">
                         <i class="fa fa-money-bill-wave fa-stack-1x"></i>
@@ -119,7 +135,7 @@
         <div class="mt20 retourligne"></div>
 
 
-        <div class="container flex">
+        <div class="container flex" id="hebergement">
             <!-- ======= HÉBERGEMENT ======= -->
             <section class="box-hebergement">
                 <h3>Hébergements à Marseille</h3>
@@ -421,6 +437,7 @@
                     <ul>
                         <li>Centre d'aide</li>
                         <li>Nous contacter</li>
+                        <div class="mb50"></div>
                     </ul>
                 </div>
 
