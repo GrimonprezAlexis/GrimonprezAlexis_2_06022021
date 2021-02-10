@@ -215,6 +215,9 @@ input:focus, button:focus{
 /*--------------------------------------------------------------
 # Hébergement
 --------------------------------------------------------------*/
+#hebergement-mobile {
+    display: none;
+}
 .box-hebergement {
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -304,6 +307,9 @@ input:focus, button:focus{
 /*--------------------------------------------------------------
 # Activités
 --------------------------------------------------------------*/
+#activites-mobile {   
+    display: none;
+}
 .flex-column {
     display: flex;
     flex-direction: column;
