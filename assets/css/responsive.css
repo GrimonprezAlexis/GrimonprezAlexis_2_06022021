@@ -154,7 +154,10 @@
     #btn-search-mobile {display: none;}
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1290px){
+    .box-populaire_item {
+        flex-wrap: nowrap;
+    }
     #nav-mobile {display: none;}
     #btn-search-mobile {display: none;}
 }
