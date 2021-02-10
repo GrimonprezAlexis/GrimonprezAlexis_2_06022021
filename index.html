@@ -37,7 +37,7 @@
                 <img src="assets/img/logo/Reservia.svg" alt="Logo Réservia" class="img-fluid" />
             </div>
 
-            <nav class="navbar" role="navigation">
+            <nav class="navbar">
                 <div class="inline-flex" id="nav-desktop">
                     <div class="nav-menu" onmouseover="addClass(1)" onmouseout="removeClass(1)">
                         <i id="item-hover-1"></i>
@@ -55,8 +55,8 @@
             </nav>
         </header>
 
-        <nav id="nav-mobile" role="navigation">
-            <ul clas="menu">
+        <nav id="nav-mobile">
+            <ul class="menu">
                 <li><a href="#hebergement">Hébergement</a></li>
                 <li><a href="#activites">Activités</a></li>
             </ul>
@@ -75,8 +75,7 @@
                         <i class="fa fa-map-marker-alt fa-stack-1x"></i>
                     </span>    
                 </div>
-                <input type="search" class="input_search" placeholder="Marseille, France" aria-label="Search"
-                aria-describedby="search-addon" />
+                <input type="search" class="input_search" placeholder="Marseille, France" aria-label="Search"/>
                 <button type="button" class="btn-search" id="btn-search-desktop">Rechercher</button>
                 <button type="button" class="btn-search" id="btn-search-mobile">
                     <span class="fa-stack"><i class="fa fa-search fa-stack-1x"></i></span>
@@ -87,8 +86,8 @@
 
         <!-- ======= FILTRE ======= -->
         <section class="container flex-row">
+            <h3 class="filtre_text">Filtre</h3>
             <ul class="flex-container" id="filtre">
-                <span class="filtre_text">Filtre</span>
                 <li>
                     <span class="fa-stack filtre_icon">
                         <i class="fa fa-money-bill-wave fa-stack-1x"></i>
@@ -471,8 +470,8 @@
                     <ul>
                         <li>Centre d'aide</li>
                         <li>Nous contacter</li>
-                        <div class="mb50"></div>
                     </ul>
+                    <div class="mb50"></div>
                 </div>
             </div>
         </footer>
@@ -481,6 +480,6 @@
         <i class="fa fa-arrow-circle-up fa-stack-1x"></i>    
         </a>
 
-        <script type="text/javascript" src="assets/js/script.js"></script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
