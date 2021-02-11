@@ -20,4 +20,4 @@ Projet 2 - Transformez une maquette en site web
 HTML, CSS, Font Awesome, Github
 
 ### Hébergement
-[#Projet 2 - Reservia](www.grimonprezalexis_2_07022021.github.io)
+[#Projet 2 - Reservia](https://grimonprezalexis.github.io/GrimonprezAlexis_2_06022021.github.io/)
