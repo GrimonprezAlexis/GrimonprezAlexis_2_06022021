@@ -1,6 +1,6 @@
 ### A propos
 Projet 2 - Transformez une maquette en site web
-Réservia - Outil de planificiation de vacances
+- Réservia - Outil de planificiation de vacances
 
 ### Contraintes techniques
 - Interface responsive
