@@ -52,7 +52,6 @@ a {
 .container {
     width: auto;
     padding-left: 4.5vw;
-    margin: 2vw;
 }
 .flex-row {
   display: flex;
@@ -99,32 +98,33 @@ a {
 # Logo + Navigation
 --------------------------------------------------------------*/
 #header {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-.navbar {
-    margin-top: -2vw;
-    margin-right: 4vw;
+.header_navbar {
+    display: flex;
+    align-items: center;
+    margin-right: 3vw;
 }
-.nav-menu {
-    display: inline-block; 
-    margin-right: 3.5vw;
+.header_navbar_item {
+    border-top: 3px solid transparent;
+    padding: 2vw;
+    font-weight: 500;
 }
-.nav-hover {
-    border-top: 2px solid #0065FC; 
-    display: block;
-}
-.nav-menu-item {
-    padding-top: 2.5vw
-}
-.nav-menu-item:hover {
+.header_navbar_item[data-active=true] {
+    border-top: 3px solid #0065FC;
     color: #0065FC;
+}
+.header_navbar_item:hover {
+    border-top: 3px solid #0065FC;
 }
 #register {
     color:#0065FC;
     font-weight: bold;
 }
-.logo {
-    padding-top: 0;
+#register-mobile {
+    display: none;
 }
 
 
@@ -153,7 +153,6 @@ input:focus, button:focus{
     outline: none;
 }
 ::placeholder {
-  color:black;
   font-size: 1.1em;
 }
 .btn-search {
@@ -181,6 +180,7 @@ input:focus, button:focus{
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     padding-right: 15px;
+    cursor: pointer;
 }
 /** Force size icon Fontawesome */
 .fa-stack {
@@ -199,6 +199,12 @@ input:focus, button:focus{
 /*--------------------------------------------------------------
 # Informations logements
 --------------------------------------------------------------*/
+#icon-info {
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    margin-right: 1vw;
+}
+
 .information-logements {
     display: flex;
     align-items: baseline;
@@ -243,6 +249,9 @@ input:focus, button:focus{
     margin: 15px;
     padding: 5px;
     box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);
+}
+.box-hebergement_item:hover {
+    transform: scale(1.035);
 }
 .flex-item_details {
     display: flex;
@@ -294,6 +303,9 @@ input:focus, button:focus{
     width: -webkit-fill-available;
     box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);
 }
+.box-populaire_item:hover {
+    transform: scale(1.035);
+}
 .bottom0 {
     bottom: 0;
     margin-top: auto;    
@@ -322,6 +334,9 @@ input:focus, button:focus{
     border-radius: 15px;
     border: 1px solid #F2F2F2;
     box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);
+}
+.box-activite_item:hover {
+    transform: scale(1.035);
 }
 .box-activite_item img {
     width: 300px;

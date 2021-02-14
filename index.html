@@ -25,27 +25,14 @@
 
     <body onscroll="onScroll()">
         <!-- ======= HEADER + NAVIGATION ======= -->
-        <header id="header" class="container flex">
-            <div class="logo">
-                <img src="assets/img/logo/Reservia.svg" alt="Logo Réservia" class="img-fluid" />
-            </div>
-
-            <nav class="navbar">
-                <div class="inline-flex" id="nav-desktop">
-                    <div class="nav-menu" onmouseover="addClass(1)" onmouseout="removeClass(1)">
-                        <i id="item-hover-1"></i>
-                        <p class="nav-menu-item"><a href="#hebergement">Hébergement</a></p>
-                    </div>
-                    <div class="nav-menu" onmouseover="addClass(2)" onmouseout="removeClass(2)">
-                        <i id="item-hover-2"></i>
-                        <p class="nav-menu-item"><a href="#activites">Activités</a></p>
-                    </div>
-                </div>
-                <div class="nav-menu" onmouseover="addClass(3)" onmouseout="removeClass(3)">
-                    <i id="item-hover-3"></i>
-                    <p class="nav-menu-item"><a id="register">S'inscrire</a></p>
-                </div>
+        <header id="header" class="container">
+            <img class="img-fluid" src="assets/img/logo/Reservia.svg" alt="Logo Reservia">
+            <nav class="header_navbar" id="nav-desktop">
+                <a href="#hebergement" class="header_navbar_item" data-active="true"">Hébergement</a>
+                <a href="#activites" class="header_navbar_item"data-active="false">Activités</a>
+                <a href="#" class="header_navbar_item" id="register">S'inscrire</a>
             </nav>
+            <a href="#" class="header_navbar_item" id="register-mobile">S'inscrire</a>
         </header>
 
         <nav id="nav-mobile">
@@ -59,7 +46,7 @@
         
         <!-- ======= DÉBUT CONTENU ======= -->
         <section class="container" id="first-content">
-            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <span>En plein centre ville ou en pleine nature</span>
             <div class="mt20"></div>
             <div class="flex-row input-group">
@@ -116,7 +103,7 @@
                 <i class="fa fa-circle-thin fa-stack-lg"></i>
                 <i class="fa fa-info fa-stack-1x"></i>
                 </span>
-                <span class="text-info">Plus de 500 logements sont disponibles dans cette ville</span>                
+                <p class="text-info">Plus de 500 logements sont disponibles dans cette ville</p>                
             </div>
         </div>
         <div class="mt20 retourligne"></div>
@@ -476,6 +463,5 @@
         <i class="fa fa-arrow-circle-up fa-stack-1x"></i>    
         </a>
 
-        <script src="assets/js/script.js"></script>
     </body>
 </html>
