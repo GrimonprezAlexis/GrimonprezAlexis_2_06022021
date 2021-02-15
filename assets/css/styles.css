@@ -259,7 +259,7 @@ input:focus, button:focus{
     width: 1em;
     color: #0065FC;
 }
-.hebergement_link {
+.hebergement__link {
     font-weight: bold;
     cursor: pointer;
     padding: 0 2vw 2vw 2.5vw;
