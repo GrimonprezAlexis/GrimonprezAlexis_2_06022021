@@ -156,6 +156,9 @@ input:focus, button:focus{
     margin-right: 2rem;
     cursor: pointer;
 }
+.search__filter__list li:hover {
+    background-color: aliceblue;
+}
 /** Force size icon Fontawesome */
 .fa-stack {
     height: 2.5em!important;
