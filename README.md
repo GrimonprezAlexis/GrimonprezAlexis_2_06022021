@@ -21,3 +21,8 @@ HTML, CSS, Font Awesome, Github
 
 ### Hébergement
 [#Projet 2 - Reservia](https://grimonprezalexis.github.io/GrimonprezAlexis_2_06022021.github.io/)
+
+### Maquette
+[Maquette](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P2+HTML+%26+CSS/Projet+2+-+Reservia+FR.zip)
+
+[![Maquette_Reservia](https://user.oc-static.com/upload/2020/08/24/1598262857804_Maquette%20reservia-min.png "Maquette_Reservia")](https://user.oc-static.com/upload/2020/08/24/1598262857804_Maquette%20reservia-min.png "Maquette_Reservia")
