@@ -78,6 +78,8 @@ a {
 #register {
     color:#0065FC;
     font-weight: bold;
+    border-top: 3px solid transparent;
+    padding: 2vw;
 }
 #register-mobile {
     display: none;
