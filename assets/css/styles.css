@@ -98,6 +98,7 @@ a {
 }
 .search__form {
     display: -webkit-inline-box;
+    display: inline-flex;
 }
 .search__form__icon {
     background-color: #F2F2F2;
@@ -109,7 +110,7 @@ input:focus, button:focus{
     outline: none;
 }
 .search__form__input {
-    padding: 0.87rem;
+    padding: 1rem;
     border: 1px solid;
     border-color: #F2F2F2;
     font-weight: bold;
