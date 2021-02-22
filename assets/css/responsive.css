@@ -35,7 +35,7 @@
     }
     #register-mobile {
         display: block;
-        padding: 2vw;
+        padding: 2rem;
         font-weight: 500;
         color:#0065FC;
         font-weight: bold;
@@ -49,9 +49,16 @@
         color: white;
         border-radius: 0 10px 10px 0;
         border: 0;
-        padding: 0.9rem 1rem;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
         cursor: pointer;
     }
+
+    .search__result__icon i {
+        margin-left: 0.8rem;
+    }
+
     .fa-map-marker-alt, .fa-search {
         left: 2px!important;
     }
