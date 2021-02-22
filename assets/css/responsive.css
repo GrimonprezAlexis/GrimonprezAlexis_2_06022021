@@ -120,7 +120,7 @@
     }
     .activites__item {
         margin-bottom: 4vw;
-        height: -webkit-fill-available;
+        height: auto;
         margin-right: 2vw;
     }
     .activite__web__img {
