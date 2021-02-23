@@ -93,7 +93,7 @@ a {
     clear:both;
 }
 #search h1 {
-    margin-block-end: 0.5em;
+    margin-bottom: 0.5rem;
 }
 .search__header {
     margin-bottom: 2rem;
@@ -250,11 +250,11 @@ input:focus, button:focus{
     margin-right: 0.5rem;
 }
 .hebergement__details h3 {
-    margin-block-start: 0.2rem;
+    margin-top: 0.2rem;
     margin-bottom: 0.2rem;    
 }
 .hebergement__details p, .hebergement__list__stars, .populaire__details p, .populaire__list__stars {
-    margin-block-start: 0.1rem;
+    margin-top: 0.1rem;
     margin-bottom: 0.1rem;
 }
 .hebergement__list__stars span, .populaire__list__stars span {
@@ -341,10 +341,7 @@ input:focus, button:focus{
     transform: scale(1.05);
 }
 .activites__item h3 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-block-end: 0.8rem;
-    margin-block-start: 0.8rem;
+    margin: 0.8rem 1rem;
 }
 .activites__item img {
     width: 300px;
