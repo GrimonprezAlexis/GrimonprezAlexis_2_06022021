@@ -171,6 +171,12 @@
     }
 }
 
+@media screen and (min-width: 450px) and (max-width:992px){
+    .hebergement__article img {
+        height: auto;
+    }
+}
+
 @media screen and (min-width: 992px){
     .search__form_button-mobile {display: none;}
     .populaire__article {
