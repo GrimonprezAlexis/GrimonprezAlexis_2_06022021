@@ -17,7 +17,7 @@ body {height: 100%;
     margin: 0;
     font-size: 14px;
     overflow-x: hidden;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", "Sans serif";
 }
 
 ul {
@@ -54,19 +54,27 @@ a {
 # Header + Navigation
 --------------------------------------------------------------*/
 #header {
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    grid-template-areas: "logo . navbar button";
+    grid-template-columns: auto 1fr auto auto;
     clear:both;
+    padding: 0 2rem;
+}
+#header img {
+    grid-area: logo;
+    padding: 0 2rem;
 }
 .header__navbar {
     display: flex;
     align-items: center;
+    grid-area: navbar;
 }
 .header__navbar__link {
     border-top: 3px solid transparent;
-    padding: 2vw;
+    padding: 2rem;
     font-weight: 500;
+    text-align: center;
 }
 .header__navbar__link[data-active=true] {
     border-top: 3px solid #0065FC;
@@ -76,10 +84,18 @@ a {
     border-top: 3px solid #0065FC;
 }
 #register {
-    color:#0065FC;
+/*     color:#0065FC;
     font-weight: bold;
     border-top: 3px solid transparent;
-    padding: 2vw;
+    padding: 2vw; */
+
+    display: flex;
+    align-items: center;
+    grid-area: button;
+    padding: 2rem;
+    color: #0065FC;
+    font-weight: 600;
+
 }
 #register-mobile {
     display: none;
@@ -104,18 +120,22 @@ a {
 .search__form__icon {
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
-    padding: 0.9rem 1.1rem;
+    padding: 1rem 1.25rem;
+    text-align: center;
     display: block;
 }
 input:focus, button:focus{
     outline: none;
 }
 .search__form__input {
-    padding: 1rem;
+    padding: 0 1.5rem;
     border: 1px solid;
     border-color: #F2F2F2;
     font-weight: bold;
     display: block;
+    box-sizing: border-box;
+    width: auto;
+    font-size: 1rem;
 }
 .search__form_button {
     background-color: #0065FC;

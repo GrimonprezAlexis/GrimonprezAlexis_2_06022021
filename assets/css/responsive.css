@@ -3,43 +3,46 @@
 # Media queries
 --------------------------------------------------------------*/
 @media screen and (min-width: 320px) and (max-width:992px){
-    #nav-desktop {
-        display: none;
+    #header {
+        display: grid;
+        grid-template-areas:
+        "logo . button"
+        "navbar navbar navbar";
+        padding: 0;
     }
-    #nav-mobile ul {
-        margin: 0px;
-        padding: 0px;
-        list-style:none;
+    #header img {
+        padding-left: 4.5vw;
+    }
+    .header__navbar {
         display: flex;
-        flex-flow: row wrap;
+        align-items: center;
+        grid-area: navbar;
     }
-    #nav-mobile ul>li {
-        color:#0065FC;
-        border-bottom: 2px solid #0065FC;
-        width: 50%;
-    }
-    #nav-mobile ul > li:nth-child(2) {
-        color:#F2F2F2;
-        border-bottom: 2px solid #F2F2F2;
-    }
-    #nav-mobile a {
-        padding: 1em;
-        display: block;
-        text-align:center;
-        text-decoration: none;
-    }
-    #nav-mobile .menu {
-        display: flex;
-        flex-direction : row;
-        justify-content: center;
-    }
-    #register-mobile {
-        display: block;
-        padding: 2rem;
+    .header__navbar__link {
+        padding: 2vw;
         font-weight: 500;
-        color:#0065FC;
-        font-weight: bold;
+        display: flex;
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+        width: 50%;
+        justify-content: space-around;
     }
+    #register {
+        grid-area: button;
+        padding: 2rem;
+        color: #0065FC;
+    }
+
+    .header__navbar__link[data-active=true] {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+    .header__navbar__link:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+
+
     .search__form_button {
         display: none;
     }
@@ -182,7 +185,6 @@
     .populaire__article {
         flex-wrap: wrap;
     }
-    #nav-mobile {display: none;}
     #btn-search-mobile {display: none;}
 }
 
@@ -191,6 +193,5 @@
     .populaire__article {
         flex-wrap: nowrap;
     }
-    #nav-mobile {display: none;}
     #btn-search-mobile {display: none;}
 }
