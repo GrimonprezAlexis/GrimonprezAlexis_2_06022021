@@ -115,7 +115,8 @@ a {
     margin-bottom: 2rem;
 }
 .search__form {
-    display: inline-flex;
+    display: flex;
+    flex-flow: row wrap;
 }
 .search__form__icon {
     background-color: #F2F2F2;
